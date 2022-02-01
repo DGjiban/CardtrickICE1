@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package cardtrickice1;
 import java.util.Scanner;
 
@@ -11,7 +7,7 @@ import java.util.Scanner;
  * step 2: take any card input from user suit,number
  * step 3: user card is in  the array 'card is found.
  *
- * @author sivagamasrinivasan
+ * @author David Gilvan
  */
 public class CardTrickICE1 {
 
@@ -42,8 +38,6 @@ public class CardTrickICE1 {
                     magicHand[i] = c1;
                 }
             }
-
-            //System.out.println(magicHand[i]);
         }
         
         //Card [] user = new Card[1];
@@ -93,17 +87,15 @@ public class CardTrickICE1 {
         
         int count =0;
         for (int i=0; i <magicHand.length;i++){
-            if (magicHand[i].getValue() == uc.getValue() && magicHand[i].getSuits() == uc.getSuits()){
-                count++;
-            } 
+            if (magicHand[i].getValue() == uc.getValue() && magicHand[i].getSuits().equals(uc.getSuits())){
+                count++;  
+            }   
         }
-        if (count > 0){
-            System.out.println("You Win!");
+        if(count > 0){    
+            System.out.println("You Win! Your card was found " + count + " times");            
         }else{
-            
             System.out.println("Sorry, you lose :(");
         }
-            
     }
 
 }
