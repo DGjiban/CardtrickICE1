@@ -43,6 +43,7 @@ public class CardTrickICE1 {
         //Card [] user = new Card[1];
         Card uc = new Card();            
         
+        /*
         //step 2:take input 
         while(usernumber == 0){
             try{
@@ -74,9 +75,13 @@ public class CardTrickICE1 {
                 input.next();
                 continue;
             }
-        }
-         uc.setValue(usernumber);
-         uc.setSuits(usersuit);
+        }*/
+        
+         //luckycard hard-coded
+        username=5
+        usersuit="clubs";    
+        uc.setValue(usernumber);
+        uc.setSuits(usersuit);
                  
         //step 3: match with array 
         System.out.println("Your guess was: " + uc);
