@@ -93,15 +93,9 @@ public class CardTrickICE1 {
         
         int count =0;
         for (int i=0; i <magicHand.length;i++){
-            if (magicHand[i] == uc){
-                System.out.println(magicHand[i]);
-                System.out.println(uc);
+            if (magicHand[i].getValue() == uc.getValue() && magicHand[i].getSuits() == uc.getSuits()){
                 count++;
-            } else {
-                System.out.println("-----------------------");
-                System.out.println(magicHand[i]);
-                System.out.println(uc);
-            }
+            } 
         }
         if (count > 0){
             System.out.println("You Win!");
